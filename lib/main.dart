@@ -28,7 +28,9 @@ class _HomePageState extends State<HomePage> {
         title: Text("Implicit animations"),
       ),
       body: Center(
-        child: SwitcherWidget()
+        child: SwitcherWidget(title: "Ativo",initialValue: true, onChanged: (value){
+            print(value);
+        },)
       ),
     );
   }
